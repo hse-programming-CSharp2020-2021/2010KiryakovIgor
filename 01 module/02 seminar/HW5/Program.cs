@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Task05_c_
+namespace Task05
 {
     class Program
     {
         //Получить от пользователя три вещественных числа и проверить для них неравенство треугольника
-        static void Method(double a, double b, double c) //создаем метод Мethod
+        static void Method(double a, double b, double c) //создаем метод
         {
             double x = Math.Abs(a);
             double y = Math.Abs(b);
