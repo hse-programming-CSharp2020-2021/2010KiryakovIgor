@@ -7,9 +7,11 @@ namespace Task_4
     */
     class Program
     {
-        public static double Method(ref double x, ref double y)
+        // создаем метод
+        public static double Method(ref double x, ref double y) 
         {
-            if (x < y && x > 0)
+            // ставим условия и возвращаем значения
+            if (x < y && x > 0)              
             {
                 return x + Math.Sin(y);
 
@@ -29,6 +31,7 @@ namespace Task_4
             double x, y;
             while (!double.TryParse(Console.ReadLine(), out x) || (!double.TryParse(Console.ReadLine(), out y)))
                 Console.WriteLine("Повторите ввод");
+            // выводим полученный результат
             Console.WriteLine(Method(ref x, ref y));
 
         }
